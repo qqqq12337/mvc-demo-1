@@ -1,0 +1,10 @@
+import   "a22cdf73d10532eec876773934762223:./app3.css";
+import   "a22cdf73d10532eec876773934762223:jquery";
+let $a22cdf73d10532eec876773934762223$var$position = parseInt(localStorage.getItem("position")) || 0;
+let $a22cdf73d10532eec876773934762223$var$square = $a22cdf73d10532eec876773934762223$import$1924281e4d728831$9099ad97b570f7c(".app3 .square");
+if ($a22cdf73d10532eec876773934762223$var$position === 1) $a22cdf73d10532eec876773934762223$var$square.addClass("active");
+$a22cdf73d10532eec876773934762223$var$square.on("click", ()=>{
+    $a22cdf73d10532eec876773934762223$var$position = 1 ^ $a22cdf73d10532eec876773934762223$var$position;
+    localStorage.setItem("position", $a22cdf73d10532eec876773934762223$var$position + "");
+    $a22cdf73d10532eec876773934762223$var$square.toggleClass("active");
+});

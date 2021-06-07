@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+ol,
+ul {
+  list-style: none;
+}
+body {
+  overflow: hidden;
+}
+
+body .page {
+  display: flex;
+  flex-wrap: wrap;
+}
+body .page section {
+  width: 50vw;
+  height: 50vh;
+  outline: 1px solid gray;
+}
+
+.app1 .number {
+  height: 8%;
+}
+
+.app2 ul {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.app2 .tab-bar li {
+  border: 1px solid gray;
+  width: 50%;
+  text-align: center;
+  user-select: none;
+}
+
+.app2 .tab-content li {
+  display: none;
+}
+.checked {
+  background-color: burlywood;
+}
+
+.app2 .tab-content li.active {
+  display: block;
+}
+
+.app3 .square {
+  border: 1px solid black;
+  width: 20%;
+  height: 20%;
+  margin-top: 5vw;
+  margin-left: 5vw;
+  transition: transform 1s;
+}
+.app3 .square.active {
+  transform: translateX(10vw);
+}
+
+.app4 .circular {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #0d85ee;
+  margin-top: 8%;
+  margin-left: 8%;
+}
+@keyframes change {
+  0% {
+  }
+  50% {
+    background-color: deeppink;
+  }
+  100% {
+    background-color: blueviolet;
+  }
+}
+
+.app4 .circular.active {
+  animation: change 1s linear alternate infinite;
+}
+
+/*# sourceMappingURL=index.c3c7f777.css.map */

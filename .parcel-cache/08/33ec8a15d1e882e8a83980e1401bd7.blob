@@ -1,0 +1,10 @@
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+var _app4Css = require("./app4.css");
+var _jquery = require("jquery");
+var _jqueryDefault = parcelHelpers.interopDefault(_jquery);
+let circular = _jqueryDefault.default(".app4 .circular");
+circular.on("mouseover", ()=>{
+    circular.addClass("active");
+}).on("mouseout", ()=>{
+    circular.removeClass("active");
+});

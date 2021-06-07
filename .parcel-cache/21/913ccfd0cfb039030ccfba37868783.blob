@@ -1,0 +1,12 @@
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+var _app3Css = require("./app3.css");
+var _jquery = require("jquery");
+var _jqueryDefault = parcelHelpers.interopDefault(_jquery);
+let position = parseInt(localStorage.getItem("position")) || 0;
+let square = _jqueryDefault.default(".app3 .square");
+if (position === 1) square.addClass("active");
+square.on("click", ()=>{
+    position = 1 ^ position;
+    localStorage.setItem("position", position + "");
+    square.toggleClass("active");
+});

@@ -1,0 +1,34 @@
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+var _jquery = require("jquery");
+var _jqueryDefault = parcelHelpers.interopDefault(_jquery);
+const $btnAdd = _jqueryDefault.default("#add1");
+const $btnMinus = _jqueryDefault.default("#minus1");
+const $btnMul = _jqueryDefault.default("#mul2");
+const $btnDivide = _jqueryDefault.default("#divide2");
+const $number = _jqueryDefault.default("#number");
+let localNumber = localStorage.getItem("localNumber");
+$number.text(localNumber || 100);
+$btnAdd.on("click", ()=>{
+    let localNumber1 = parseInt($number.text());
+    localNumber1++;
+    localStorage.setItem("localNumber", localNumber1);
+    $number.text(localNumber1);
+});
+$btnMinus.on("click", ()=>{
+    let localNumber1 = parseInt($number.text());
+    localNumber1--;
+    localStorage.setItem("localNumber", localNumber1);
+    $number.text(localNumber1);
+});
+$btnMul.on("click", ()=>{
+    let localNumber1 = parseInt($number.text());
+    localNumber1 *= 2;
+    localStorage.setItem("localNumber", localNumber1);
+    $number.text(localNumber1);
+});
+$btnDivide.on("click", ()=>{
+    let localNumber1 = parseInt($number.text());
+    localNumber1 /= 2;
+    localStorage.setItem("localNumber", localNumber1);
+    $number.text(localNumber1);
+});

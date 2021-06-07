@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><link rel="stylesheet" href="/index.HASH_REF_d527e480f7383ebca24c2695c3c7f777.css">
+    <meta charset="UTF-8">
+    <title>mvc-demo-01</title>
+</head>
+<body>
+<div class="page">
+    <section class="app1">
+        <div class="number"></div>
+            <button>+1</button>
+            <button>-1</button>
+            <button>*2</button>
+            <button>÷2</button>
+    </section>
+    <section class="app2">
+        <ul class="tab-bar">
+            <li>第一栏</li>
+            <li>第二栏</li>
+        </ul>
+        <ol class="tab-content">
+            <li>内容一</li>
+            <li>内容二</li>
+        </ol>
+    </section>
+    <section class="app3">
+        <div class="square"></div>
+    </section>
+    <section class="app4">
+        <div class="circular"></div>
+    </section>
+</div>
+<script src="/index.HASH_REF_e9312995559a911a6f9b63a6bd78eeec.js"></script>
+</body>
+</html>

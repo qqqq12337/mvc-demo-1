@@ -1,0 +1,27 @@
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+var _app1Css = require("./app1.css");
+var _jquery = require("jquery");
+var _jqueryDefault = parcelHelpers.interopDefault(_jquery);
+let localNumber = parseInt(localStorage.getItem('number') || 100);
+_jqueryDefault.default(".number").text(localNumber);
+let button = _jqueryDefault.default(".app1 button");
+button.eq(0).on("click", ()=>{
+    localNumber += 1;
+    _jqueryDefault.default(".number").text(localNumber);
+    localStorage.setItem('number', localNumber);
+});
+button.eq(1).on("click", ()=>{
+    localNumber -= 1;
+    _jqueryDefault.default(".number").text(localNumber);
+    localStorage.setItem('number', localNumber);
+});
+button.eq(2).on("click", ()=>{
+    localNumber *= 2;
+    _jqueryDefault.default(".number").text(localNumber);
+    localStorage.setItem('number', localNumber);
+});
+button.eq(3).on("click", ()=>{
+    localNumber /= 2;
+    _jqueryDefault.default(".number").text(localNumber);
+    localStorage.setItem('number', localNumber);
+});

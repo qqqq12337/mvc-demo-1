@@ -1,0 +1,8 @@
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+var _jquery = require("jquery");
+var _jqueryDefault = parcelHelpers.interopDefault(_jquery);
+var _app3Css = require("./app3.css");
+const $square = _jqueryDefault.default('#app3 .square');
+$square.on('click', ()=>{
+    $square.toggleClass('active');
+});

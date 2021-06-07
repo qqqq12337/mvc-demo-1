@@ -1,0 +1,25 @@
+import   "dedd9e77111cfb27708e56688ff161f0:./app1.css";
+import   "dedd9e77111cfb27708e56688ff161f0:jquery";
+let $dedd9e77111cfb27708e56688ff161f0$var$localNumber = parseInt(localStorage.getItem('number') || 100);
+$dedd9e77111cfb27708e56688ff161f0$import$1924281e4d728831$9099ad97b570f7c(".number").text($dedd9e77111cfb27708e56688ff161f0$var$localNumber);
+let $dedd9e77111cfb27708e56688ff161f0$var$button = $dedd9e77111cfb27708e56688ff161f0$import$1924281e4d728831$9099ad97b570f7c(".app1 button");
+$dedd9e77111cfb27708e56688ff161f0$var$button.eq(0).on("click", ()=>{
+    $dedd9e77111cfb27708e56688ff161f0$var$localNumber += 1;
+    $dedd9e77111cfb27708e56688ff161f0$import$1924281e4d728831$9099ad97b570f7c(".number").text($dedd9e77111cfb27708e56688ff161f0$var$localNumber);
+    localStorage.setItem('number', $dedd9e77111cfb27708e56688ff161f0$var$localNumber);
+});
+$dedd9e77111cfb27708e56688ff161f0$var$button.eq(1).on("click", ()=>{
+    $dedd9e77111cfb27708e56688ff161f0$var$localNumber -= 1;
+    $dedd9e77111cfb27708e56688ff161f0$import$1924281e4d728831$9099ad97b570f7c(".number").text($dedd9e77111cfb27708e56688ff161f0$var$localNumber);
+    localStorage.setItem('number', $dedd9e77111cfb27708e56688ff161f0$var$localNumber);
+});
+$dedd9e77111cfb27708e56688ff161f0$var$button.eq(2).on("click", ()=>{
+    $dedd9e77111cfb27708e56688ff161f0$var$localNumber *= 2;
+    $dedd9e77111cfb27708e56688ff161f0$import$1924281e4d728831$9099ad97b570f7c(".number").text($dedd9e77111cfb27708e56688ff161f0$var$localNumber);
+    localStorage.setItem('number', $dedd9e77111cfb27708e56688ff161f0$var$localNumber);
+});
+$dedd9e77111cfb27708e56688ff161f0$var$button.eq(3).on("click", ()=>{
+    $dedd9e77111cfb27708e56688ff161f0$var$localNumber /= 2;
+    $dedd9e77111cfb27708e56688ff161f0$import$1924281e4d728831$9099ad97b570f7c(".number").text($dedd9e77111cfb27708e56688ff161f0$var$localNumber);
+    localStorage.setItem('number', $dedd9e77111cfb27708e56688ff161f0$var$localNumber);
+});

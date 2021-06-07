@@ -1,0 +1,13 @@
+import   "9e814a360bb70cbb67e6964a6960d5f5:./app2.css";
+import   "9e814a360bb70cbb67e6964a6960d5f5:jquery";
+let $9e814a360bb70cbb67e6964a6960d5f5$var$checkedId = parseInt(localStorage.getItem("checkedId")) || 0;
+let $9e814a360bb70cbb67e6964a6960d5f5$var$checked = $9e814a360bb70cbb67e6964a6960d5f5$import$1924281e4d728831$9099ad97b570f7c(".app2 .tab-bar li");
+$9e814a360bb70cbb67e6964a6960d5f5$var$checked.eq($9e814a360bb70cbb67e6964a6960d5f5$var$checkedId).addClass("checked");
+$9e814a360bb70cbb67e6964a6960d5f5$import$1924281e4d728831$9099ad97b570f7c(".app2 .tab-content li").eq($9e814a360bb70cbb67e6964a6960d5f5$var$checkedId).addClass("active");
+$9e814a360bb70cbb67e6964a6960d5f5$var$checked.on("click", (e)=>{
+    let index = $9e814a360bb70cbb67e6964a6960d5f5$import$1924281e4d728831$9099ad97b570f7c(e.currentTarget).index();
+    localStorage.setItem("checkedId", index);
+    $9e814a360bb70cbb67e6964a6960d5f5$import$1924281e4d728831$9099ad97b570f7c(".app2 li").removeClass();
+    $9e814a360bb70cbb67e6964a6960d5f5$import$1924281e4d728831$9099ad97b570f7c(e.currentTarget).addClass("checked");
+    $9e814a360bb70cbb67e6964a6960d5f5$import$1924281e4d728831$9099ad97b570f7c(".app2 .tab-content li").eq(index).addClass("active");
+});
